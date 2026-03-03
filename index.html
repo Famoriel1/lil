@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Asset Host</title>
+    <title>FNAE Game</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: black; }
+    </style>
 </head>
 <body>
-    <h1>Assets Loaded</h1>
+    <div id="preloader">
+        <div id="progress-bar" style="width:0%;height:20px;background:yellow;"></div>
+        <div id="preloader-percentage">0%</div>
+    </div>
+    <div id="main-menu" class="hidden">Main Menu</div>
+    <audio id="menu-music" src="assets/sounds/music.ogg" loop></audio>
+    <script src="game.js"></script>
 </body>
 </html>
